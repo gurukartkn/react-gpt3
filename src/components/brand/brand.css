@@ -14,3 +14,9 @@
     justify-content: center;
     align-items: center;
 }
+
+@media screen and (max-width: 650px) {
+    .gpt3__brand {
+        display: none;
+    }
+}
