@@ -28,6 +28,12 @@
     text-align: center;
     margin-bottom: 10rem;
     cursor: pointer;
+    transition: 1s ease;
+}
+
+.gpt3__footer-btn:hover {
+    background: var(--gradient-bar);
+    border-radius: 25px;
 }
 
 .gpt3__footer-btn p {
@@ -92,6 +98,10 @@
     color: #fff;
     margin: 0.5rem 0;
     cursor: pointer;
+}
+
+.gpt3__footer-links_div p:hover {
+    color: #FF4820;
 }
 
 .gpt3__footer-copyright {

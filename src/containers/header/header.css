@@ -67,6 +67,12 @@
     cursor: pointer;
     outline: none;
     padding: 0 1rem;
+    transition: all .5s ease-in-out;
+}
+
+.gpt3__header-content__input button:hover {
+    background: var(--gradient-text);
+    border-radius: 0px 15px 15px 0px;
 }
 
 .gpt3__header-content__people {

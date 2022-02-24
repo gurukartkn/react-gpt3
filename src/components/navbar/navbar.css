@@ -19,6 +19,74 @@
 .gpt3__navbar-links_logo img {
     width: 62px;
     height: 16px;
+    cursor: pointer;
+}
+
+.gpt3__navbar-links_logo img:hover {
+    -webkit-animation: jello-horizontal 0.9s both;
+    animation: jello-horizontal 0.9s both;
+}
+
+@-webkit-keyframes jello-horizontal {
+    0% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+    30% {
+        -webkit-transform: scale3d(1.25, 0.75, 1);
+        transform: scale3d(1.25, 0.75, 1);
+    }
+    40% {
+        -webkit-transform: scale3d(0.75, 1.25, 1);
+        transform: scale3d(0.75, 1.25, 1);
+    }
+    50% {
+        -webkit-transform: scale3d(1.15, 0.85, 1);
+        transform: scale3d(1.15, 0.85, 1);
+    }
+    65% {
+        -webkit-transform: scale3d(0.95, 1.05, 1);
+        transform: scale3d(0.95, 1.05, 1);
+    }
+    75% {
+        -webkit-transform: scale3d(1.05, 0.95, 1);
+        transform: scale3d(1.05, 0.95, 1);
+    }
+    100% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+@keyframes jello-horizontal {
+    0% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+    30% {
+        -webkit-transform: scale3d(1.25, 0.75, 1);
+        transform: scale3d(1.25, 0.75, 1);
+    }
+    40% {
+        -webkit-transform: scale3d(0.75, 1.25, 1);
+        transform: scale3d(0.75, 1.25, 1);
+    }
+    50% {
+        -webkit-transform: scale3d(1.15, 0.85, 1);
+        transform: scale3d(1.15, 0.85, 1);
+    }
+    65% {
+        -webkit-transform: scale3d(0.95, 1.05, 1);
+        transform: scale3d(0.95, 1.05, 1);
+    }
+    75% {
+        -webkit-transform: scale3d(1.05, 0.95, 1);
+        transform: scale3d(1.05, 0.95, 1);
+    }
+    100% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
 }
 
 .gpt3__navbar-links_container {
@@ -45,6 +113,12 @@
     cursor: pointer;
 }
 
+.gpt3__navbar-links_container p:hover,
+.gpt3__navbar-sign p:hover {
+    color: #FF4820;
+    transition-delay: 0.1s;
+}
+
 .gpt3__navbar-sign button,
 .gpt3__navbar-menu_container button {
     padding: 0.5rem 1rem;
@@ -58,12 +132,19 @@
     border: 0;
     outline: none;
     cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+
+.gpt3__navbar-sign button:hover {
+    background: var(--gradient-text);
+    border-radius: 15px;
 }
 
 .gpt3__navbar-menu {
     margin-left: 1rem;
     display: none;
     position: relative;
+    z-index: 1;
 }
 
 .gpt3__navbar-menu svg {
@@ -85,6 +166,7 @@
     min-width: 210px;
     border-radius: 5px;
     box-shadow: 0 0 5 rgba(0, 0, 0, 0.2);
+    transition: all .5s ease-in-out;
 }
 
 .gpt3__navbar-menu_container p {

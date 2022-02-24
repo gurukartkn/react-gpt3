@@ -3,7 +3,7 @@ import "./brand.css";
 import { google, slack, atlassian, dropbox, shopify } from "./import";
 const Brand = () => {
   return (
-    <div className="gpt3__brand section__padding">
+    <div className="gpt3__brand section__padding bounce-top">
       <div>
         <img src={google} alt="google" />
       </div>

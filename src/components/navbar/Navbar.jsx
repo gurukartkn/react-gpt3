@@ -6,12 +6,12 @@ import logo from "../../assets/logo.svg";
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
   return (
-    <div className="gpt3__navbar">
+    <div className="gpt3__navbar ">
       <div className="gpt3__navbar-links">
-        <div className="gpt3__navbar-links_logo">
+        <div className="gpt3__navbar-links_logo rotate-in-center">
           <img src={logo} alt="logo" />
         </div>
-        <div className="gpt3__navbar-links_container">
+        <div className="gpt3__navbar-links_container slide-in-blurred-top">
           <p>
             <a href="#home">Home</a>
           </p>
@@ -29,11 +29,11 @@ const Navbar = () => {
           </p>
         </div>
       </div>
-      <div className="gpt3__navbar-sign">
+      <div className="gpt3__navbar-sign bounce-top">
         <p>Sign in</p>
         <button type="button">Sign up</button>
       </div>
-      <div className="gpt3__navbar-menu">
+      <div className="gpt3__navbar-menu bounce-top">
         {toggleMenu ? (
           <RiCloseLine
             color="#fff"
